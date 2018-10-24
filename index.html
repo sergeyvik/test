@@ -5,6 +5,34 @@
 	<title>Document</title>
 </head>
 <body>
+	<h1>The person who inspires me is: <span class="name">
+		
+	</span>
+	<p class="shortBio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur eius fugiat incidunt consectetur blanditiis excepturi dolorum quia rerum atque minima. Quos repudiandae tempore quia odit quibusdam iusto iste mollitia ipsum?</p>
+	</h1>
+	<script>
+		let fon = prompt('Какой будет фон у страницы?');
+		let body = document.getElementsByTagName('body')[0];
+		let aBody = document.createAttribute('bgcolor');	
+		aBody.value = fon;		
+		body.setAttributeNode(aBody);
+		let color = prompt('Какой будет цвет текста на странице?');
+		let aText = document.createAttribute('text');
+		aText.value = color;		
+		body.setAttributeNode(aText);
+		let name = prompt('Как зовут человека, который вас вдохновляет');		
+		document.getElementsByClassName('name')[0].textContent=name;
+		let img = prompt('Введите адрес картинки');
+		let image = document.querySelector('span');
+		image.innerHTML=img;
+		let str = document.getElementsByClassName('shortBio')[0];
+		let strText = prompt('Введите текст страницы');		
+		str.innerHTML = str.innerHTML + ' ' + strText;
+		str.setAttribute('class', 'shortBio animated');
+		
+
+	</script>
+
 	
 </body>
 </html>
