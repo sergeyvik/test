@@ -1,3 +1,4 @@
+
 const button = document.querySelector('.request');
 const block = document.querySelector('.popup');
 const close = document.querySelector('.closePopup');
@@ -22,4 +23,23 @@ closeMenu.addEventListener('click', function() {
 });
 
 console.log(button);
-console.log(block);
+console.log(block); 
+/*
+let names = [
+	[
+		['куры', 'гуси', 'павлины'],
+		['сокол', 'орел', 'соловей']
+	],
+	[
+		['собака', 'кошка'],
+		['обезьяна', 'рысь']
+	]
+]
+
+names.forEach((name)=>{
+	name.forEach((name)=>{
+		name.forEach((name)=>{
+			console.log(name);
+		})
+	})
+})
